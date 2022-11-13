@@ -361,16 +361,19 @@
             <label>
              <input type="email" name="email" placeholder="E-mail"/>
             </label>
-          <button type="submit">Підписатися<svg class="icon" width="24" height="24">
+          <button class="form-btn" type="submit">Підписатися<svg class="form-icon" width="24" height="24">
             <use href="img/icons.svg#icon-telegram-icon"></use>
           </svg></button>
           </form>
         </div>
       </div>
     </footer>
+   
+    <!--Backdrop-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="signup-form" name="signup_form" autocomplete="on" novalidate>
+        <form class="modal-form" name="signup_form" autocomplete="on" novalidate>
           <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
           <label for="">
             <span class="form-content">Ім'я</span> 
@@ -381,10 +384,16 @@
           </label>
           <label for="">
             <span class="form-content">Телефон</span>
+            <svg class="" width="12" height="12">
+              <use href="img/icons.svg#icon-phone-1"></use>
+            </svg>
             <input type="tel" name="tel">
           </label>
           <label for="">
             <span class="form-content">Пошта</span>
+            <svg class="" width="12" height="12">
+              <use href="img/icons.svg#icon-email-1"></use>
+            </svg>
             <input type="mail" name="mail">
           </label>
           <label for="">
