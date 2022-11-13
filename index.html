@@ -355,35 +355,40 @@
             </li>
           </ul>
         </div>
-        <div>
-          <form name="signup_form" autocomplete="on" novalidate>
-            <p class="title-footer"><b>Підпишіться на розсилку</b></p>
+          <div class="form-container">
+          <p class="title-footer"><b>Підпишіться на розсилку</b></p>
+           <form class="signup-form" name="signup_form" autocomplete="on" novalidate>
             <label>
              <input type="email" name="email" placeholder="E-mail"/>
             </label>
-          <button type="submit">Підписатися</button>
+          <button type="submit">Підписатися<svg class="icon" width="24" height="24">
+            <use href="img/icons.svg#icon-telegram-icon"></use>
+          </svg></button>
           </form>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form name="signup_form" autocomplete="on" novalidate>
-          <p>Залиште свої дані, ми вам передзвонимо</p>
+        <form class="signup-form" name="signup_form" autocomplete="on" novalidate>
+          <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
           <label for="">
-            Ім'я
-            <input type="name" name="name">
+            <span class="form-content">Ім'я</span> 
+            <svg class="" width="12" height="12">
+              <use href="img/icons.svg#icon-person-1"></use>
+            </svg>
+            <input type="name" name="name"/>
           </label>
           <label for="">
-            <p>Телефон</p>
+            <span class="form-content">Телефон</span>
             <input type="tel" name="tel">
           </label>
           <label for="">
-            Пошта
+            <span class="form-content">Пошта</span>
             <input type="mail" name="mail">
           </label>
           <label for="">
-            Коментар
+            <span class="form-content">Коментар</span>
             <input type="text" name="text">
           </label>
           <label for="">
