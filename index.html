@@ -379,7 +379,7 @@
         <div class="form-field">  
           <label for="user-name">
             <span class="form-content">Ім'я</span> 
-            <input class="form-label" type="name" name="name" id="user-name" />
+            <input class="form-label" type="name" name="name" id="user-name" required  minlength="2"/>
             <svg class="form-icon" width="18" height="18">
               <use href="img/icons.svg#icon-person-1"></use>
             </svg>
@@ -388,7 +388,7 @@
         <div class="form-field">
           <label for="tel">
             <span class="form-content">Телефон</span>
-            <input class="form-label" type="tel" name="tel" id="tel">
+            <input class="form-label" type="tel" name="tel" id="tel" required  minlength="12" maxlength="12">
             <svg class="form-icon" width="18" height="18">
               <use href="img/icons.svg#icon-phone-1"></use>
             </svg>
@@ -397,7 +397,7 @@
         <div class="form-field">
           <label for="mail">
             <span class="form-content">Пошта</span>
-            <input class="form-label" type="email" name="mail" id="mail">
+            <input class="form-label" type="email" name="mail" id="mail" required>
             <svg class="form-icon" width="18" height="18">
               <use href="img/icons.svg#icon-email-1"></use>
             </svg>
@@ -411,7 +411,7 @@
           </label>
         </div>
          <label  for="contract">
-            <input class="form-check" type="checkbox" name="text" id="contract">
+            <input class="form-check" type="checkbox" name="text" id="contract" required>
            <span class="span-text">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a> </span> 
           </label>
           <button type="submit">Відправити</button>
